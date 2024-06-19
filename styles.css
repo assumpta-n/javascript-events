@@ -2,9 +2,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
 }
-h2 {
+h2{
     font-weight: 400;
 }
+
 button {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -21,6 +22,15 @@ button:active {
     top: 3px;
 
 }
-.handler-attribute-btn {
+.log-text-btn {
     background-color:gold;
+}
+form fieldset {
+    border: 1px solid #afaeae;
+    width: 60%;
+    min-width: 350px;
+}
+
+form h3 {
+    font-weight: 500;
 }

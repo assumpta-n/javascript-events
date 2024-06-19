@@ -9,14 +9,27 @@
 <body>
     <h1>JavaScript Events Tutorial</h1>
     <section>
-        <h2>Event Handler Attributes</h2>
+        <h2>1. Event Handler Attributes</h2>
+        <button 
+        class="log-text-btn"  
+        onclick = "logTextToConsole()"
+        >
+            Log Text
+        </button>
     </section>
-    <button 
-    class="handler-attribute-btn"  
-    onclick = "useHandlerAttribute()"
-    >
-        Use Handler attribute
-    </button>
+    <section>
+        <h2>2. Event Handler Properties</h2>
+        <Form>
+            <Fieldset>
+                <legend><h3>Input Focus Event</h3></legend>
+                <label for="userName">Name: </label>
+                <input id="userName" type="text"/>
+
+            </Fieldset>
+        </Form>
+
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
