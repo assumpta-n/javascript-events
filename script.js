@@ -1,10 +1,18 @@
-function logTextToConsole() {
+function logTextToConsole(myEvent) {
     console.log("We are using an onclick, HTML event handler attribute to listen to a click event on this button ")
+    console.log("The event is", myEvent) //global event property which we can access inside event handlers. 
+    console.log("The event type is", myEvent)
 }
 
-function showAlertOnBlur() {
-    alert("The input is out of focus. This means we've triggered a blur event")
-}
+// function showAlertOnBlur() {
+//     alert("The input is out of focus. This means we've triggered a blur event")
+// }
 
-const usernameInput = document.getElementById('userName')
-usernameInput.onblur = showAlertOnBlur;
+// function logTextOnBlur() {
+//     console.log("The form input is out of focus")
+//     console.log(event)
+// }
+
+// const usernameInput = document.getElementById('userName')
+// usernameInput.onblur = showAlertOnBlur; //first onblur handler
+// usernameInput.onblur = logTextOnBlur; //Second onblur handler which overrides showAlertOnBlur()
