@@ -11,10 +11,17 @@
     <section>
         <h2>1. Event Handler Attributes</h2>
         <button 
-        class="log-text-btn"  
+        class="log-text-btn" 
+        id="logTextBtn" 
         onclick = "logTextToConsole(event)"
         >
             Log Text
+        </button>
+        <button 
+        class="stop-text-btn"
+        onclick="stopLoggingTextToConsole()"
+        > 
+            Stop Logging Text
         </button>
     </section>
     <!-- <section>
