@@ -10,16 +10,19 @@ function stopLoggingTextToConsole() {
     alert("The Log Text Button doesn't work anymore. Click it to find out for yourself")
 }
 
+function showAlertOnBlur(inputEvent) {
+    alert("The input is out of focus. This means we've triggered a blur event")
+    console.log("The event object is", inputEvent)
+}
 
-// function showAlertOnBlur() {
-//     alert("The input is out of focus. This means we've triggered a blur event")
-// }
+const usernameInput = document.getElementById('userName')
+usernameInput.onblur = showAlertOnBlur; 
+
 
 // function logTextOnBlur() {
 //     console.log("The form input is out of focus")
 //     console.log(event)
 // }
 
-// const usernameInput = document.getElementById('userName')
-// usernameInput.onblur = showAlertOnBlur; //first onblur handler
+
 // usernameInput.onblur = logTextOnBlur; //Second onblur handler which overrides showAlertOnBlur()
