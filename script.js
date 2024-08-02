@@ -15,14 +15,21 @@ function showAlertOnBlur(inputEvent) {
     console.log("The event object is", inputEvent)
 }
 
+function logTextOnBlur() {
+    console.log("The form input is out of focus but the alert doesn't show anymore")
+}
+
 const usernameInput = document.getElementById('userName')
 usernameInput.onblur = showAlertOnBlur; 
+usernameInput.onblur = logTextOnBlur; //Second onblur handler which overrides showAlertOnBlur
 
-
-// function logTextOnBlur() {
-//     console.log("The form input is out of focus")
-//     console.log(event)
+// function stopBlurEvent(formBtnEvent) {
+//     formBtnEvent.preventDefault()
+//     usernameInput.onblur = null
+//     console.log('Stop Blur Btn Clicked')
 // }
 
+// const stopBlurBtn = document.getElementById('stopBlurBtn')
+// stopBlurBtn.onclick = stopBlurEvent
 
-// usernameInput.onblur = logTextOnBlur; //Second onblur handler which overrides showAlertOnBlur()
+
